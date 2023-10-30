@@ -5,10 +5,12 @@ import {
   DevicePhoneMobileIcon,
   AdjustmentsHorizontalIcon,
   SunIcon,
+  CalendarDaysIcon,
 } from "@heroicons/react/24/solid";
 
 import benefitOneImg from "../public/img/benefit-one.png";
 import benefitTwoImg from "../public/img/benefit-two.png";
+import indoorCyling from "../public/img/undraw_indoor_bike_pwa4.svg";
 
 const benefitOne = {
   title: "Highlight your benefits",
@@ -33,28 +35,38 @@ const benefitOne = {
   ],
 };
 
-const benefitTwo = {
-  title: "Offer more benefits here",
-  desc: "You can use this same layout with a flip image to highlight your rest of the benefits of your product. It can also contain an image or Illustration as above section along with some bullet points.",
-  image: benefitTwoImg,
+const agendaList = {
+  title: "Agenda",
+  desc: "Gedurende 5 digitale sessies van telkens 1 uur, zullen we je klaarstomen voor het fietsseizoen 2023.",
+  image: indoorCyling,
   bullets: [
     {
-      title: "Mobile Responsive Template",
-      desc: "Nextly is designed as a mobile first responsive template.",
-      icon: <DevicePhoneMobileIcon />,
+      title: "Rit 1",
+      desc: "Dinsdag 7 november",
+      icon: <CalendarDaysIcon />,
     },
     {
-      title: "Powered by Next.js & TailwindCSS",
-      desc: "This template is powered by latest technologies and tools.",
-      icon: <AdjustmentsHorizontalIcon />,
+      title: "Rit 2",
+      desc: "Dinsdag 5 december",
+      icon: <CalendarDaysIcon />,
     },
     {
-      title: "Dark & Light Mode",
-      desc: "Nextly comes with a zero-config light & dark mode. ",
-      icon: <SunIcon />,
+      title: "Rit 3",
+      desc: "Dinsdag 9 januari",
+      icon: <CalendarDaysIcon />,
+    },
+    {
+      title: "Rit 4",  
+      desc: "Dinsdag 6 februari",
+      icon: <CalendarDaysIcon />,
+    },
+    {
+      title: "Rit 5",
+      desc: "Dinsdag 5 maart",
+      icon: <CalendarDaysIcon />,
     },
   ],
 };
 
 
-export {benefitOne, benefitTwo};
+export {benefitOne, agendaList};
